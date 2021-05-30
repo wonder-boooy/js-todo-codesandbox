@@ -2,10 +2,43 @@ body {
   font-family: sans-serif;
 }
 
+input {
+  border-radius: 16px;
+  border: none;
+  padding: 6px 16px;
+  outline: none;
+  height: 30px;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 4px 16px;
+}
+
+button:hover {
+  background-color: #ff7777;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  color: #666;
+}
+
+.list-row {
+  display: flex;
+  align-items: center;
+}
+
 .input-area {
   background-color: #c1ffff;
   width: 400px;
-  height: 30px;
+  imn-height: 30px;
   padding: 8px;
   margin: 8px;
   border-radius: 8px;
