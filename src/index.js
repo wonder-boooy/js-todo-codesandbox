@@ -19,8 +19,10 @@ const onClickAdd = () => {
 
   const completeButton = document.createElement("button");
   completeButton.innerText = "完了";
+  completeButton.addEventListener("click", () => alert("完了"));
   const removeButton = document.createElement("button");
   removeButton.innerText = "削除";
+  removeButton.addEventListener("click", () => alert("削除"));
 
   div.appendChild(p);
   div.appendChild(completeButton);
