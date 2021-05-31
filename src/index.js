@@ -22,14 +22,17 @@ const onClickAdd = () => {
   completeButton.addEventListener("click", () => alert("完了"));
   const removeButton = document.createElement("button");
   removeButton.innerText = "削除";
-  removeButton.addEventListener("click", () => alert("削除"));
+  removeButton.addEventListener("click", () => {
+    const removeTarget = removeButton.parentNode.parentNode;
+    document.getElementById("incomplete-list").removeChild(removeTarget);
+  });
 
   div.appendChild(p);
   div.appendChild(completeButton);
   div.appendChild(removeButton);
   li.appendChild(div);
 
-  document.getElementById("imcomplete-list").appendChild(li);
+  document.getElementById("incomplete-list").appendChild(li);
   // const completeButton = document
 };
 
